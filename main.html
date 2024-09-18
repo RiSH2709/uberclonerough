@@ -1,0 +1,226 @@
+<html>
+<head>
+    <title>Uber</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .navbar {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .ride-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .ride-section .form {
+            width: 45%;
+        }
+        .ride-section .form select,
+        .ride-section .form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .ride-section .form button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .ride-section .form button:hover {
+            background-color: #333;
+        }
+        .ride-section .map {
+            width: 45%;
+        }
+        .suggestions {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        .suggestion-item {
+            width: 30%;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .suggestion-item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .suggestion-item h3 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .suggestion-item p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .suggestion-item button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .suggestion-item button:hover {
+            background-color: #333;
+        }
+        .drive-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .drive-section img {
+            width: 45%;
+            border-radius: 5px;
+        }
+        .drive-section .content {
+            width: 45%;
+        }
+        .drive-section .content h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .drive-section .content p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .drive-section .content button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .drive-section .content button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Uber</a>
+        </div>
+        <div class="nav-links">
+            <a href="#">Ride</a>
+            <a href="#">Drive</a>
+            <a href="#">Business</a>
+            <a href="#">Uber Eats</a>
+        </div>
+        <div class="auth-links">
+            <a href="#">Help</a>
+            <a href="#">Log in</a>
+            <a href="#">Sign up</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section ride-section">
+            <div class="form">
+                <h2>Go anywhere with Uber</h2>
+                <select>
+                    <option>Ride</option>
+                    <option>Rent</option>
+                </select>
+                <input type="text" placeholder="Pick-up location">
+                <input type="text" placeholder="Drop-off location">
+                <input type="date">
+                <input type="time">
+                <button>See prices</button>
+            </div>
+            <div class="map">
+                <img src="maap.JPG" alt="Map showing various locations" style="width: 500px; height: 350px;">
+            </div>
+        </div>
+        <div class="section suggestions">
+            <h2>Suggestions</h2>
+            <div class="suggestion-item">
+                <img src="icons8-trip-96.png" alt="Icon representing a trip">
+                <h3>Trip</h3>
+                <p>Go anywhere with Uber. Request a trip by tapping a button.</p>
+                <button>Details</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="icons8-motorbike-96.png" alt="Icon representing 2 wheels">
+                <h3>2 Wheels</h3>
+                <p>Find and rent an electric bike using the Uber app.</p>
+                <button>Details</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="icons8-kawaii-coffee-100.png" alt="Icon representing food">
+                <h3>Food</h3>
+                <p>Order delivery from local restaurants with Uber Eats.</p>
+                <button>Details</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="icons8-grocery-96.png" alt="Icon representing grocery">
+                <h3>Grocery</h3>
+                <p>Get groceries delivered to your door with Uber Eats.</p>
+                <button>Details</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="icons8-reserve-64.png" alt="Icon representing reserve">
+                <h3>Reserve</h3>
+                <p>Reserve your ride in advance so you are ready to go on your day of your trip.</p>
+                <button>Details</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="icons8-hire-me-96.png" alt="Icon representing car hire">
+                <h3>Car hire</h3>
+                <p>Find perfect rental for a few clicks with Uber Car Hire.</p>
+                <button>Details</button>
+            </div>
+        </div>
+        <div class="section drive-section">
+            <img src="earner-illustra.jpg" alt="Illustration of a person driving a car">
+            <div class="content">
+                <h2>Drive when you want, make what you need</h2>
+                <p>Make money on your schedule with deliveries or trips – or both. You can sign up your car or choose a hire vehicle through Uber.</p>
+                <button>Get started</button>
+                <p>Already have an account? <a href="#">Sign in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
